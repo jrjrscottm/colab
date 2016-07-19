@@ -1,25 +1,28 @@
-Welcome to the HyperDev BETA
+Getting Started
 ============================
 
-Click `"Show"` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-HyperDev is a developer playground that lets you code a real web-app without the slow setup and deployment steps. 
-
-
-Your Project
+Installation
 ------------
 
+1. Install Node.js
+    - [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+2. Run `npm install` to install npm packages locally
+3. Run `gulp watch`
+
+Development
+-----------
+
+This application uses a simple express server to serve HTML, CSS and Javascript content.
+
+The backend serves `views/index.html`, along with and javascript and css, at `http://localhost:9999`.
+
+Livereload is enabled, the page will reload with updates to any files in `public/` or `views/`
+
 On the back-end,
-- your app starts at `server.js`
+- the app starts at `server.js`
 - add frameworks and packages in `package.json`
-- safely store app secrets in `.env`
+- store configuration variables in `.env`
 
 On the front-end,
-- edit `client.js`, `style.css` and `index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-
-Made by Fog Creek
------------------
-
-\ ゜o゜)ノ
+- edit `public/client.js`, `public/style.css` and `public/index.html`
+- add images to `assets`
